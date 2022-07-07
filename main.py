@@ -12,14 +12,14 @@ import nets.util.misc as utils
 from torch._C import DisableTorchFunction
 from datetime import date
 from typing import Iterable
-from lr_scheduler import WarmUpLR
-from optimizer import get_learning_rate
-from metrics import init_metric, update_metric, get_mean_metric
+from tools.lr_scheduler import WarmUpLR
+from tools.optimizer import get_learning_rate
+from tools.metrics import init_metric, update_metric, get_mean_metric
 
 from nets.util.misc import NestedTensor
 from dataloader.Gold166 import detection_collate
 from dataloader.Gold166 import TrainDataset, TestDataset
-from nets.detr import build
+from nets.nrtr import build
 from utils.swc2mat import swc2mat
 
 def get_args_parser():
