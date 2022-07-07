@@ -41,7 +41,7 @@ def generateTrainDataset():
     path_x, path_y, path_z = 64//scale_factor, 64//scale_factor, 64//scale_factor
     root_dir = "./dataset/VISoR-40_dataset/test_data"
     train_datas = ["test_1", "test_2", "test_3", "test_4", "test_5"] 
-    trainFile = h5py.File("./H5dataset/VISoR_40/VISoR_40_train_DETR_64_0619.hdf5", "w")
+    trainFile = h5py.File("./H5dataset/VISoR-40/VISoR_40_train_NRTR.hdf5", "w")
     
     for train_data in train_datas:
         image_path = os.path.join(root_dir, train_data+".tif")
@@ -122,7 +122,7 @@ def generateTestDataset():
     path_x, path_y, path_z = 64//scale_factor, 64//scale_factor, 64//scale_factor
     root_dir = "./dataset/VISoR-40_dataset/test_data"
     test_datas = ["test_7"] 
-    testFile = h5py.File("./H5dataset/VISoR_40/VISoR_40_test_DETR_64_0620.hdf5", "w")
+    testFile = h5py.File("./H5dataset/VISoR-40/VISoR_40_test_NRTR.hdf5", "w")
     
     for test_data in test_datas:
         image_path = os.path.join(root_dir, test_data+".tif")

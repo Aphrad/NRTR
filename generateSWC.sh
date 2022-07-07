@@ -1,3 +1,5 @@
+mkdir ./result
+
 CUDA_VISIBLE_DEVICES=0
 python generateSWC.py --distributed --eval --backbone="resnet50" --hidden_dim=192 --val_batch_size=80 --num_queries=100 --crop_size=64\
 --test_dataset_path="./H5dataset/gold166/Gold166_test_NRTR.hdf5" --eval_model_path="./checkpoint/best_model.pth" --out_swc_dir="./result/"\

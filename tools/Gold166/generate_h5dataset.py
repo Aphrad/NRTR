@@ -23,7 +23,7 @@ def generateTrainDataset():
     path_x, path_y, path_z = 64//scale_factor, 64//scale_factor, 64//scale_factor
     root_dir = "./dataset/gold166"
     train_data_dirs = ["p_checked7_janelia_flylight_part1"] 
-    trainFile = h5py.File("./H5dataset/gold166/Gold166_train_DETR_64.hdf5", "w")
+    trainFile = h5py.File("./H5dataset/Gold166/Gold166_train_NRTR.hdf5", "w")
     
     for train_data_dir in train_data_dirs:
         one_level_dir = os.path.join(root_dir, train_data_dir)
@@ -110,7 +110,7 @@ def generateTestDataset():
     path_x, path_y, path_z = 64//scale_factor, 64//scale_factor, 64//scale_factor
     root_dir = "./dataset/gold166/"
     test_data_dirs = ['p_checked6_janelia_flylight_part2']   
-    testFile = h5py.File("./H5dataset/gold166/Gold166_test_DETR_64.hdf5", "w")
+    testFile = h5py.File("./H5dataset/Gold166/Gold166_test_NRTR.hdf5", "w")
         
     #region TestFile
     for test_data_dir in test_data_dirs:
