@@ -1,4 +1,4 @@
-**NRTR**: Neuron Reconstruction TRansformer
+NRTR: Neuron Reconstruction with TRansformer For 3D Optical Microscopy Images
 ========
 
 PyTorch training and test code for **NRTR** (**N**euron **R**econstruction **TR**ansformer). 
